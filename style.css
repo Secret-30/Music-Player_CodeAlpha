@@ -21,3 +21,22 @@ audio.addEventListener('timeupdate', () => {
 progress.addEventListener('input', (e) => {
     audio.currentTime = (e.target.value / 100) * audio.duration;
 });
+/* Styling the Vertical Volume Slider */
+#volume-slider {
+    -webkit-appearance: slider-vertical;
+    width: 8px;
+    height: 150px;
+    background: #ffb7c5; /* Light pink track background */
+    border-radius: 5px;
+}
+
+/* Styling the draggable handle (the thumb) */
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #ff5c85; /* Dark pink handle to match your buttons */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
