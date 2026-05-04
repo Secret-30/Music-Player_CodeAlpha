@@ -5,6 +5,7 @@ playPauseBtn.addEventListener('click', () => {
     if (isPlaying) {
         playPauseBtn.innerText = "▶️"; // Show play icon
         console.log("Music Paused");
+    
     } else {
         playPauseBtn.innerText = "⏸️"; // Show pause icon
         console.log("Music Playing");
