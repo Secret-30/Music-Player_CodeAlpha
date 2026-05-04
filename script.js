@@ -1,12 +1,11 @@
-const prevBtn = document.getElementById('prev');
-const nextBtn = document.getElementById('next');
+const volumeSlider = document.getElementById('volume-slider');
+const volDown = document.getElementById('vol-down');
+const volUp = document.getElementById('vol-up');
 
-prevBtn.addEventListener('click', () => {
-    console.log("Previous song clicked");
-    // Add logic here to change song
+volDown.addEventListener('click', () => {
+    volumeSlider.value = parseInt(volumeSlider.value) - 10;
 });
 
-nextBtn.addEventListener('click', () => {
-    console.log("Next song clicked");
-    // Add logic here to change song
+volUp.addEventListener('click', () => {
+    volumeSlider.value = parseInt(volumeSlider.value) + 10;
 });
