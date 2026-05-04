@@ -1,8 +1,8 @@
 body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #fce4ec; }
 
-.music-player { background-color: #ffd1dc; padding: 40px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 300px; border: 1px solid #ffb7c5; }
+85.music-player { background-color: #ffd1dc; padding: 40px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 300px; border: 1px solid #ffb7c5; }
 
-.main-controls button { background: #ff5c85; color: white; border: none; padding: 15px; border-radius: 50%; cursor: pointer; font-size: 20px; margin: 10px; }
+.main-controls button { background: #A865B5; color: white; border: none; padding: 15px; border-radius: 50%; cursor: pointer; font-size: 20px; margin: 10px; }
 
 /* Progress bar */
 #progress-bar { width: 100%; margin: 10px 0; }
