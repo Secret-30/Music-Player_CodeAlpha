@@ -1,13 +1,12 @@
-const playPauseBtn = document.getElementById('play-pause');
-let isPlaying = false;
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
 
-playPauseBtn.addEventListener('click', () => {
-    if (isPlaying) {
-        playPauseBtn.innerText = "▶️"; 
-        console.log("Music Paused");
-    } else {
-        playPauseBtn.innerText = "⏸️"; 
-        console.log("Music Playing");
-    }
-    isPlaying = !isPlaying;
+prevBtn.addEventListener('click', () => {
+    console.log("Previous song clicked");
+    // Add logic here to change song
+});
+
+nextBtn.addEventListener('click', () => {
+    console.log("Next song clicked");
+    // Add logic here to change song
 });
