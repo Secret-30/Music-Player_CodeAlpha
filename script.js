@@ -3,19 +3,11 @@ let isPlaying = false;
 
 playPauseBtn.addEventListener('click', () => {
     if (isPlaying) {
-        playPauseBtn.innerText = "▶️"; // Show play icon
+        playPauseBtn.innerText = "▶️"; 
         console.log("Music Paused");
-    
     } else {
-        playPauseBtn.innerText = "⏸️"; // Show pause icon
+        playPauseBtn.innerText = "⏸️"; 
         console.log("Music Playing");
     }
     isPlaying = !isPlaying;
 });
-input[type=range] {
-    width: 100%;
-    margin: 15px 0;
-    cursor: pointer;
-}
-/* Style the labels */
-label { font-size: 12px; color: #555; }
