@@ -40,3 +40,38 @@ progress.addEventListener('input', (e) => {
     cursor: pointer;
     border: 2px solid white;
 }
+/* --- BUTTONS --- */
+.controls button {
+    background: #ff5c85; /* Dark Pink */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%; /* Makes buttons perfectly circular */
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #ff85a2;
+}
+
+/* --- VERTICAL VOLUME SLIDER --- */
+#volume-slider {
+    -webkit-appearance: slider-vertical;
+    width: 8px;
+    height: 100px;
+    background: #ffe4e1; /* Light Pink Track */
+    border-radius: 5px;
+    outline: none;
+}
+
+/* The Draggable Pink Handle */
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #ff5c85; /* Dark Pink Handle */
+    border-radius: 50%;
+    cursor: pointer;
+}
