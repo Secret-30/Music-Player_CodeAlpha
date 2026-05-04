@@ -3,10 +3,10 @@ let isPlaying = false;
 
 playPauseBtn.addEventListener('click', () => {
     if (isPlaying) {
-        playPauseBtn.innerText = "Play";
+        playPauseBtn.innerText = "▶️"; // Show play icon
         console.log("Music Paused");
     } else {
-        playPauseBtn.innerText = "Pause";
+        playPauseBtn.innerText = "⏸️"; // Show pause icon
         console.log("Music Playing");
     }
     isPlaying = !isPlaying;
