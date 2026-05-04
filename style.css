@@ -1,18 +1,43 @@
 body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #fce4ec; }
 
-85.music-player { background-color: #ffd1dc; padding: 40px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 300px; border: 1px solid #ffb7c5; }
-
-.main-controls button { background: #A865B5; color: white; border: none; padding: 15px; border-radius: 50%; cursor: pointer; font-size: 20px; margin: 10px; }
-
-/* Progress bar */
-#progress-bar { width: 100%; margin: 10px 0; }
-
-/* Vertical Volume Slider */
-.volume-container { margin-top: 20px; }
-#volume-slider { 
-    -webkit-appearance: slider-vertical; 
-    width: 8px; height: 100px; background: #ffe4e1; border-radius: 5px; 
+.music-player { 
+    background-color: #ffd1dc; 
+    padding: 30px; 
+    border-radius: 25px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    text-align: center; 
+    width: 300px; 
+    border: 1px solid #ffb7c5; 
 }
-#volume-slider::-webkit-slider-thumb { 
-    -webkit-appearance: none; width: 16px; height: 16px; background: #ff5c85; border-radius: 50%; cursor: pointer; 
+
+/* Make buttons circular and pink */
+.main-controls button { 
+    background: #ff5c85; 
+    color: white; 
+    border: none; 
+    padding: 15px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    font-size: 18px; 
+    margin: 5px; 
+}
+
+/* Styling both Progress and Volume bars to be horizontal and pink */
+input[type=range] { 
+    width: 100%; 
+    margin: 15px 0; 
+    cursor: pointer; 
+    -webkit-appearance: none; 
+    background: #ffe4e1; 
+    height: 8px; 
+    border-radius: 5px; 
+}
+
+/* The "Thumb" (the circle you drag) */
+input[type=range]::-webkit-slider-thumb { 
+    -webkit-appearance: none; 
+    width: 16px; 
+    height: 16px; 
+    background: #ff5c85; 
+    border-radius: 50%; 
 }
